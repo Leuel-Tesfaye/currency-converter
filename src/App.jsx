@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 
 import "./App.css";
 import CurrencyRow from "./components/CurrencyRow";
@@ -6,10 +6,12 @@ import CurrencyRow from "./components/CurrencyRow";
 function App() {
   return (
     <>
-      <h1>Convert</h1>
-      <CurrencyRow />
-      <div>=</div>
-      <CurrencyRow />
+      <div className="app-container">
+        <h1>Convert</h1>
+        <CurrencyRow></CurrencyRow>
+        <div className="equals">=</div>
+        <CurrencyRow></CurrencyRow>
+      </div>
     </>
   );
 }
